@@ -5,7 +5,7 @@ import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
 import Image from "next/image";
 import { MEDIA } from "@/lib/media";
 
-const taglineWords = ["Where", "Every", "Dream", "Kitchen", "Begins."];
+const taglineWords = ["Where", "Every", "Modular", "Dream", "Begins."];
 
 export default function HeroSection() {
   const [showTagline, setShowTagline] = useState(false);
@@ -171,7 +171,7 @@ export default function HeroSection() {
             >
               <Image
                 src={MEDIA.HERO_LOGO}
-                alt="MR Panel — Premium Modular Kitchen Wood Panels"
+                alt="MR Panel — Premium Modular Wood Panels for Kitchens, Furniture & Corporate Spaces"
                 width={420}
                 height={210}
                 className="w-56 sm:w-72 md:w-88 lg:w-[400px] xl:w-[460px] h-auto object-contain"
@@ -244,7 +244,7 @@ export default function HeroSection() {
           className="text-[11px] sm:text-sm tracking-[0.32em] uppercase text-[var(--gold-accent)] font-[family-name:var(--font-body)] mb-14 relative"
           style={{ textShadow: "0 1px 10px rgba(0,0,0,0.90), 0 2px 20px rgba(0,0,0,0.70)" }}
         >
-          Precision Panels · Modular Kitchens · ISI Certified
+          Precision Panels · Kitchens · Furniture · Corporate Spaces · ISI Certified
         </motion.p>
 
         {/* Scroll indicator */}

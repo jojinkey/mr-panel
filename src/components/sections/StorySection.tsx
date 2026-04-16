@@ -148,10 +148,10 @@ export default function StorySection() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-lg lg:text-xl text-[var(--wood-mid)] font-[family-name:var(--font-body)] leading-relaxed mb-6"
               >
-                Mr. Rajesh started MR Panel after watching too many dream kitchens fail —
+                Mr. Rajesh started MR Panel after watching too many modular dreams fail —
                 not from bad design, but from the wrong wood. Swollen carcasses.
-                Warped shutters. Delaminating panels. Premium interiors undone by
-                substandard materials passed off as quality.
+                Warped shutters. Delaminating panels. Premium interiors — kitchens,
+                wardrobes, office fit-outs — undone by substandard materials passed off as quality.
               </motion.p>
 
               <motion.p
@@ -160,10 +160,10 @@ export default function StorySection() {
                 transition={{ duration: 0.8, delay: 0.55 }}
                 className="text-lg lg:text-xl text-[var(--wood-mid)] font-[family-name:var(--font-body)] leading-relaxed mb-10"
               >
-                In 2014, he set out to build something India&apos;s modular kitchen
+                In 2014, he set out to build something India&apos;s modular design
                 industry had never seen — panels engineered <em>specifically</em> for
-                the heat, moisture, and load demands of the modern furniture, kitchen and dream designs. Every grade
-                we make exists because a real kitchen demanded it.
+                the heat, moisture, and load demands of modern kitchens, furniture, wardrobes,
+                and corporate spaces. Every grade we make exists because a real project demanded it.
               </motion.p>
 
               <motion.blockquote
@@ -173,8 +173,8 @@ export default function StorySection() {
                 className="border-l-4 border-[var(--gold-accent)] pl-8 py-4"
               >
                 <p className="text-xl lg:text-2xl font-[family-name:var(--font-accent)] italic text-[var(--wood-dark)] leading-relaxed">
-                  &ldquo;A kitchen is the heart of every home. It deserved a panel
-                  built with the same intention.&rdquo;
+                  &ldquo;Every space — kitchen, living room, office — deserves a panel
+                  built with the same intention and precision.&rdquo;
                 </p>
                 <cite className="block mt-6 text-sm not-italic tracking-wide text-[var(--wood-mid)] font-[family-name:var(--font-body)]">
                   — Mr. Rajesh, Founder &amp; CEO, MR Panel
@@ -188,7 +188,7 @@ export default function StorySection() {
                 transition={{ duration: 0.8, delay: 0.9 }}
                 className="flex flex-wrap gap-4 mt-10"
               >
-                {["ISI Certified", "BWP IS:710", "BWR IS:303", "Kitchen-Grade Tested"].map((badge) => (
+                {["ISI Certified", "BWP IS:710", "BWR IS:303", "Modular-Grade Tested"].map((badge) => (
                   <span
                     key={badge}
                     className="px-4 py-2 rounded-full text-xs tracking-wider font-[family-name:var(--font-body)] border border-[var(--wood-mid)]/30 text-[var(--wood-mid)] bg-[var(--warm-white)]/50"

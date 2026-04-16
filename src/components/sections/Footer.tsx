@@ -76,7 +76,7 @@ export default function Footer() {
               className="h-12 w-auto object-contain mb-4 brightness-200 contrast-75"
             />
             <p className="text-[var(--wood-light)] font-[family-name:var(--font-accent)] italic text-lg">
-              Precision Panels. Perfect Kitchens.
+              Precision Panels. Perfect Spaces.
             </p>
           </div>
 
@@ -143,7 +143,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} MR Panel. All rights reserved.
           </p>
           <p className="text-xs text-[var(--wood-mid)] font-[family-name:var(--font-body)]">
-            Crafting India&apos;s dream kitchens, one panel at a time. Since 2014.
+            Crafting India&apos;s modular spaces, one panel at a time. Since 2014.
           </p>
         </div>
       </div>

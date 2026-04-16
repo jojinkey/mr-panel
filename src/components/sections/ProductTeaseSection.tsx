@@ -5,10 +5,10 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 
 const products = [
   {
-    name: "MR Kitchen Shield",
+    name: "MR Modular Shield",
     grade: "Marine Grade · BWP",
     description:
-      "Engineered for the wettest kitchen zones — under-sink cabinets, hob surrounds, and splash walls. Boiling water proof, termite-resistant, and dimensionally stable for life.",
+      "Engineered for the most demanding zones — kitchen under-sinks, bathroom vanities, wet areas, and high-moisture corporate spaces. Boiling water proof, termite-resistant, and dimensionally stable for life.",
     thickness: "6mm – 25mm",
     certification: "ISI IS:710",
     tag: "Most Popular",
@@ -18,7 +18,7 @@ const products = [
     name: "MR Carcass Board",
     grade: "Cabinet Grade · BWR",
     description:
-      "The invisible backbone of every modular kitchen. Precision-calibrated thickness, zero warping, and superior screw-holding strength for carcasses that stay true for decades.",
+      "The invisible backbone of every modular design — kitchens, wardrobes, storage units, and office cabinets. Precision-calibrated thickness, zero warping, and superior screw-holding strength.",
     thickness: "4mm – 19mm",
     certification: "ISI IS:303",
     tag: "Best Seller",
@@ -28,9 +28,9 @@ const products = [
     name: "MR Shutter Ply",
     grade: "Shutter Grade · High Density",
     description:
-      "Dense, flat, and warp-resistant — crafted to hold hinges firmly and stay perfectly square. Resists steam, cooking grease, and daily wear without losing its finish.",
+      "Dense, flat, and warp-resistant — engineered to hold hinges firmly across kitchens, furniture shutters, wardrobe doors, and corporate cabinet fronts. Resists daily wear without losing its finish.",
     thickness: "6mm – 18mm",
-    certification: "Kitchen Spec",
+    certification: "Modular Spec",
     tag: "New",
     color: "#A0784E",
   },
@@ -38,7 +38,7 @@ const products = [
     name: "MR Curve Form",
     grade: "Flexi Grade · Radius Cut",
     description:
-      "Push the limits of kitchen design. Ultra-flexible panels for curved islands, radius cabinets, arched hoods, and every architectural detail that sets a kitchen apart.",
+      "Push the limits of modular design. Ultra-flexible panels for curved kitchen islands, arched wardrobes, radius reception desks, and every architectural statement piece.",
     thickness: "3mm – 8mm",
     certification: "Custom Spec",
     tag: "Designer Pick",
@@ -78,12 +78,12 @@ export default function ProductTeaseSection() {
               Our Range
             </p>
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-[family-name:var(--font-display)] text-[var(--wood-dark)] mb-5">
-              Panels for Every Part
+              Panels for Every
               <br />
-              <span className="text-[var(--gold-accent)]">of Your Kitchen</span>
+              <span className="text-[var(--gold-accent)]">Modular Space</span>
             </h2>
             <p className="text-lg text-[var(--wood-mid)] font-[family-name:var(--font-body)] max-w-2xl mx-auto">
-              Four kitchen-specific grades, each engineered for a precise role — so every zone of your kitchen gets exactly the panel it deserves.
+              Four precision grades — each engineered for a specific role across kitchens, furniture, wardrobes, and corporate interiors.
             </p>
           </motion.div>
         </div>

@@ -58,7 +58,7 @@ export default function LegacyWallSection() {
             style={{ opacity }}
             className="text-4xl lg:text-6xl xl:text-7xl font-[family-name:var(--font-display)] text-[var(--cream)] leading-tight mb-14"
           >
-            Every great kitchen
+            Every great space
             <br />
             is only as strong as
             <br />
@@ -72,10 +72,10 @@ export default function LegacyWallSection() {
             className="max-w-2xl mx-auto"
           >
             <p className="text-lg lg:text-xl text-[var(--wood-light)] font-[family-name:var(--font-accent)] italic leading-relaxed">
-              Since 2014, interior designers, modular kitchen manufacturers, and
-              architects across India have trusted MR Panel to be the invisible
-              foundation of their finest work — where no one sees the panel,
-              but everyone feels the difference.
+              Since 2014, interior designers, modular manufacturers, furniture makers,
+              and architects across India have trusted MR Panel to be the invisible
+              foundation of their finest work — from dream kitchens to corporate offices —
+              where no one sees the panel, but everyone feels the difference.
             </p>
           </motion.div>
 

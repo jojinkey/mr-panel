@@ -34,14 +34,14 @@ export default function CTASection() {
             className="text-center mb-14 lg:mb-20"
           >
             <p className="text-sm tracking-[0.3em] uppercase text-[var(--gold-accent)] font-[family-name:var(--font-body)] mb-5">
-              Start Your Kitchen Project
+              Start Your Modular Project
             </p>
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-[family-name:var(--font-display)] text-[var(--wood-dark)] mb-6">
               Feel the Difference
             </h2>
             <p className="text-lg lg:text-xl text-[var(--wood-mid)] font-[family-name:var(--font-body)] max-w-2xl mx-auto leading-relaxed">
               Request a free sample panel and experience the precision, finish,
-              and quality that 500+ modular kitchens across India are built on.
+              and quality that 500+ modular projects — kitchens, furniture & corporate spaces — across India are built on.
             </p>
           </motion.div>
 
@@ -94,7 +94,7 @@ export default function CTASection() {
                 </label>
                 <select className="w-full px-5 py-3.5 rounded-xl border border-[var(--wood-light)]/30 bg-[var(--warm-white)] text-[var(--wood-dark)] focus:outline-none focus:border-[var(--gold-accent)] transition-colors font-[family-name:var(--font-body)]">
                   <option value="">Select a product</option>
-                  <option value="shield">MR Kitchen Shield (Marine BWP)</option>
+                  <option value="shield">MR Modular Shield (Marine BWP)</option>
                   <option value="carcass">MR Carcass Board (BWR)</option>
                   <option value="shutter">MR Shutter Ply</option>
                   <option value="curve">MR Curve Form (Flexi)</option>

@@ -5,7 +5,7 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 import { CountAnimation } from "@/components/ui/count-animation";
 import { ChefHat, Award, Zap } from "lucide-react";
 
-const flipWords = ["Kitchen", "Furniture", "Designs", "PlywWood"];
+const flipWords = ["Kitchens", "Furniture", "Wardrobes", "Offices"];
 
 function CalendarFlipWord() {
   const [index, setIndex] = useState(0);
@@ -51,9 +51,9 @@ const stats = [
     icon: ChefHat,
     number: 500,
     suffix: "+",
-    label: "Kitchens Built",
+    label: "Projects Delivered",
     description:
-      "Over 500 modular kitchen projects across India trust MR Panel as the foundation of their craft.",
+      "Over 500 modular projects — kitchens, furniture, wardrobes & corporate spaces — across India trust MR Panel.",
   },
   {
     icon: Award,
@@ -69,7 +69,7 @@ const stats = [
     suffix: "",
     label: "Zero Compromise",
     description:
-      "Kitchen-grade engineering from raw timber to final panel. Built to outlast the kitchen itself.",
+      "Modular-grade engineering from raw timber to final panel. Built to outlast every space it's placed in.",
     displayText: "Zero",
   },
 ];
@@ -108,7 +108,7 @@ export default function QualitySection() {
               Modular <CalendarFlipWord />
             </h2>
             <p className="mt-5 text-lg text-[var(--wood-mid)] font-[family-name:var(--font-body)] max-w-xl mx-auto">
-              Not just any plywood. Panels precision-engineered for heat, moisture, and the demands of daily kitchen life.
+              Not just any plywood. Panels precision-engineered for every modular application — kitchens, furniture, wardrobes, and corporate fit-outs.
             </p>
           </motion.div>
 

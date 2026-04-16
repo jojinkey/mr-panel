@@ -23,25 +23,27 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "MR Panel | Premium Modular Kitchen Wood Panels — Bhiwadi, India",
+  title: "MR Panel | Premium Modular Wood Panels — Kitchens, Furniture & Corporate Spaces",
   description:
-    "MR Panel engineers premium wood panels exclusively for modular kitchens. BWP marine grade, carcass boards, shutter ply & flexi panels. ISI Certified. Founded by Mr. Rajesh in 2014. Request a free sample today.",
+    "MR Panel engineers premium wood panels for modular kitchens, furniture, wardrobes, and corporate interiors. BWP marine grade, carcass boards, shutter ply & flexi panels. ISI Certified. Founded by Mr. Rajesh in 2014. Serving India. Request a free sample today.",
   keywords: [
     "modular kitchen panels",
-    "BWP plywood kitchen",
-    "kitchen carcass board",
-    "modular kitchen wood India",
-    "kitchen shutter ply",
-    "marine grade plywood kitchen",
-    "MR Panel Mumbai",
-    "premium plywood modular kitchen",
-    "ISI certified kitchen panels",
-    "modular kitchen wood panels India",
+    "modular furniture panels",
+    "corporate interior panels",
+    "BWP plywood modular",
+    "modular carcass board",
+    "modular wood panels India",
+    "shutter ply supplier",
+    "marine grade plywood",
+    "MR Panel Bhiwadi",
+    "premium plywood modular design",
+    "ISI certified modular panels",
+    "modular wood panels India",
   ],
   openGraph: {
-    title: "MR Panel — Premium Wood Panels for Modular Kitchens",
+    title: "MR Panel — Premium Wood Panels for Modular Designs",
     description:
-      "Precision-engineered plywood panels for modular kitchens. Marine grade, carcass, shutter & flexi variants. ISI Certified. Trusted by 500+ kitchen projects.",
+      "Precision-engineered plywood panels for modular kitchens, furniture & corporate spaces. Marine grade, carcass, shutter & flexi variants. ISI Certified. Trusted by 500+ projects.",
     type: "website",
     locale: "en_IN",
     siteName: "MR Panel",
@@ -50,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MR Panel — Where Every Modular Dream Begins",
     description:
-      "Premium wood panels engineered for modular kitchens. ISI Certified. Founded 2014.",
+      "Premium wood panels for modular kitchens, furniture & corporate spaces. ISI Certified. Founded 2018.",
   },
 };
 

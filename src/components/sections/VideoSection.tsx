@@ -153,7 +153,7 @@ export default function VideoSection() {
               "0 2px 18px rgba(0,0,0,0.90), 0 4px 36px rgba(0,0,0,0.70)",
           }}
         >
-          500+ Kitchens.&nbsp;Zero Compromises.
+          500+ Modular Projects.&nbsp;Zero Compromises.
         </h2>
 
         <p
@@ -161,7 +161,7 @@ export default function VideoSection() {
           style={{ textShadow: "0 1px 10px rgba(0,0,0,0.80)" }}
         >
           Every panel we ship is engineered specifically for the heat, moisture,
-          and load demands of the modern modular kitchen — not just passed off as quality.
+          and load demands of modern kitchens, furniture, wardrobes, and corporate spaces — not just passed off as quality.
         </p>
 
         <a
