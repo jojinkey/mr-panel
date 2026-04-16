@@ -801,7 +801,7 @@ export default function ProposalPage() {
               <div className="space-y-6 pl-12 sm:pl-16">
                 {[
                   { step: "01", label: "Review this proposal and confirm scope", day: "Day 1–2" },
-                  { step: "02", label: "Sign Letter of Intent + 50% advance payment", day: "Day 3" },
+                  { step: "02", label: "Sign off on Letter of Intent to proceed", day: "Day 3" },
                   { step: "03", label: "Kickoff call — brand assets, credentials, access", day: "Day 5" },
                   { step: "04", label: "Google Business Profile live — Pan-India", day: "Day 7" },
                   { step: "05", label: "Website wireframe approval", day: "Day 14" },

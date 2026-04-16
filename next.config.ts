@@ -2,11 +2,21 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    // Allow next/image to optimise images served from the local media proxy.
+    // The proxy uses ?key=... query strings, so localPatterns must explicitly
+    // permit that pathname + search combination.
+    localPatterns: [
+      {
+        pathname: "/api/media",
+        search: "**",
+      },
+    ],
     remotePatterns: [
       {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      // Keep file.garden as a fallback in case any component references it directly.
       {
         protocol: "https",
         hostname: "file.garden",

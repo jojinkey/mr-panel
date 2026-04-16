@@ -147,21 +147,28 @@ export default function VideoSection() {
         </p>
 
         <h2
-          className="relative text-3xl sm:text-4xl lg:text-5xl font-[family-name:var(--font-accent)] italic text-white leading-tight mb-4"
+          className="relative text-4xl sm:text-5xl lg:text-7xl font-[family-name:var(--font-display)] text-white leading-none mb-3 tracking-wide"
           style={{
             textShadow:
-              "0 2px 18px rgba(0,0,0,0.90), 0 4px 36px rgba(0,0,0,0.70)",
+              "0 2px 24px rgba(0,0,0,0.95), 0 4px 48px rgba(0,0,0,0.80), 0 0 2px rgba(0,0,0,1)",
           }}
         >
-          500+ Modular Projects.&nbsp;Zero Compromises.
+          MR PANEL
         </h2>
+
+        <p
+          className="relative text-xl sm:text-2xl lg:text-3xl font-[family-name:var(--font-accent)] italic text-[var(--gold-accent)] mb-5"
+          style={{ textShadow: "0 2px 16px rgba(0,0,0,0.90)" }}
+        >
+          Vision
+        </p>
 
         <p
           className="relative text-sm sm:text-base text-white/80 font-[family-name:var(--font-body)] max-w-md leading-relaxed mb-7"
           style={{ textShadow: "0 1px 10px rgba(0,0,0,0.80)" }}
         >
-          Every panel we ship is engineered specifically for the heat, moisture,
-          and load demands of modern kitchens, furniture, wardrobes, and corporate spaces — not just passed off as quality.
+          Every panel we ship is engineered for the heat, moisture, and load demands
+          of modern kitchens, furniture, wardrobes, and corporate spaces — precision built, zero compromise.
         </p>
 
         <a

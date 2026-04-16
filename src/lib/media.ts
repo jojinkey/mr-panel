@@ -1,25 +1,21 @@
 /**
- * Central media registry for all file.garden assets.
+ * Central media registry — ALL assets routed through /api/media.
  *
- * Images: direct file.garden URLs — consumed by next/image which
- *   already proxies, optimises, and caches them via /_next/image.
- *
- * Videos: routed through /api/media which adds aggressive
- *   Cache-Control headers and forwards Range requests so the
- *   browser's HTTP cache persists them across sessions.
+ * Routing every asset (video AND image) through the local proxy gives us:
+ *   • Aggressive server-side caching (next: { revalidate: false })
+ *   • Consistent Cache-Control headers on every response
+ *   • Byte-range forwarding for video seeking
+ *   • A single choke-point to swap CDN without touching components
  */
-
-const FG = "https://file.garden/aaq7u9giWjY0-o-W/MR%20PANEL";
-
 export const MEDIA = {
-  /** Logo PNG — transparent background */
-  HERO_LOGO: `${FG}/MR%20Panel%20log%20png%20no%20bg.png`,
+  /** MR Panel logo — transparent PNG */
+  HERO_LOGO:   "/api/media?key=hero-logo",
+  /** Same logo used in footer */
+  FOOTER_LOGO: "/api/media?key=hero-logo",
   /** Hero background video */
-  HERO_VIDEO: "/api/media?key=hero-video",
+  HERO_VIDEO:  "/api/media?key=hero-video",
   /** Ambient "still calm" video in VideoSection */
-  CALM_VIDEO: "/api/media?key=calm-video",
+  CALM_VIDEO:  "/api/media?key=calm-video",
   /** Furniture set product image in StorySection */
-  FURNITURE: `${FG}/Furniture%20set.png`,
-  /** Footer / alternate logo */
-  FOOTER_LOGO: `${FG}/Gemini_Generated_Image_2k94uy2k94uy2k94.png`,
+  FURNITURE:   "/api/media?key=furniture",
 } as const;

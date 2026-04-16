@@ -2,12 +2,16 @@ import { type NextRequest } from "next/server";
 
 // Upstream map lives here only — never reaches the client bundle.
 const UPSTREAM: Record<string, string> = {
-  "hero-video": "https://file.garden/aaq7u9giWjY0-o-W/MR%20PANEL/MR%20Panel%20Vidoe.mp4",
-  "calm-video": "https://file.garden/aaq7u9giWjY0-o-W/MR%20PANEL/Still%20calm.mp4",
+  // ── videos ──
+  "hero-video":  "https://file.garden/aaq7u9giWjY0-o-W/MR%20PANEL/MR%20Panel%20Vidoe.mp4",
+  "calm-video":  "https://file.garden/aaq7u9giWjY0-o-W/MR%20PANEL/Still%20calm.mp4",
+  // ── images ──
+  "hero-logo":   "https://file.garden/aaq7u9giWjY0-o-W/MR%20PANEL/MR%20Panel%20log%20png%20no%20bg.png",
+  "furniture":   "https://file.garden/aaq7u9giWjY0-o-W/MR%20PANEL/Furniture%20set.png",
 };
 
-// 7 days — assets on file.garden don't change, so we cache aggressively.
-const MAX_AGE = 60 * 60 * 24 * 7;
+// 30 days — file.garden assets are immutable; cache very aggressively.
+const MAX_AGE = 60 * 60 * 24 * 30;
 
 // Response headers forwarded from the upstream verbatim.
 const FORWARD_RESPONSE_HEADERS = [
@@ -45,7 +49,13 @@ export async function GET(request: NextRequest) {
 
   let upstreamRes: Response;
   try {
-    upstreamRes = await fetch(upstream, { headers: upstreamHeaders });
+    upstreamRes = await fetch(upstream, {
+      headers: upstreamHeaders,
+      // Server-side: cache the upstream response indefinitely on the Next.js
+      // server so repeated requests never re-hit file.garden.
+      // Range requests are unique per Range header so they won't collide.
+      next: { revalidate: false },
+    });
   } catch {
     return new Response("Upstream unreachable", { status: 502 });
   }
