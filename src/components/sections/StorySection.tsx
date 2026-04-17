@@ -129,11 +129,11 @@ export default function StorySection() {
                 className="rounded-2xl overflow-hidden shadow-2xl"
               >
                 <Image
-                  src={MEDIA.FURNITURE}
-                  alt="Premium modular furniture and kitchen panels by MR Panel"
+                  src={MEDIA.HERO_LOGO}
+                  alt="MR Panel — Premium Modular Wood Panels"
                   width={800}
                   height={600}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-contain"
                   style={{ filter: "saturate(105%) brightness(1.02)" }}
                   priority
                 />

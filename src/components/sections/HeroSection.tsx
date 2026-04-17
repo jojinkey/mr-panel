@@ -33,14 +33,9 @@ export default function HeroSection() {
     const video = videoRef.current;
     if (!video) return;
 
-    // Show the video the moment it actually starts playing — NOT when
-    // canplaythrough fires.  canplaythrough requires the whole 32 MB file
-    // to be buffered before it fires; "playing" fires within seconds.
     const handlePlaying = () => setVideoReady(true);
     video.addEventListener("playing", handlePlaying, { once: true });
 
-    // autoPlay covers most browsers; explicit play() is a fallback for
-    // Safari iOS where autoPlay is blocked until user gesture context.
     const tryPlay = () => video.play().catch(() => {});
     if (video.readyState >= 2) {
       tryPlay();

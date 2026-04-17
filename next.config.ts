@@ -8,7 +8,6 @@ const nextConfig: NextConfig = {
     localPatterns: [
       {
         pathname: "/api/media",
-        search: "**",
       },
     ],
     remotePatterns: [
