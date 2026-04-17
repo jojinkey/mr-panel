@@ -51,10 +51,7 @@ export async function GET(request: NextRequest) {
   try {
     upstreamRes = await fetch(upstream, {
       headers: upstreamHeaders,
-      // Server-side: cache the upstream response indefinitely on the Next.js
-      // server so repeated requests never re-hit file.garden.
-      // Range requests are unique per Range header so they won't collide.
-      next: { revalidate: false },
+      cache: "no-store",
     });
   } catch {
     return new Response("Upstream unreachable", { status: 502 });
@@ -72,7 +69,7 @@ export async function GET(request: NextRequest) {
       const v = upstreamRes.headers.get(h);
       if (v) h304.set(h, v);
     }
-    h304.set("Cache-Control", `public, max-age=${MAX_AGE}, s-maxage=${MAX_AGE}, stale-while-revalidate=86400`);
+    h304.set("Cache-Control", `public, max-age=${MAX_AGE}, stale-while-revalidate=86400`);
     return new Response(null, { status: 304, headers: h304 });
   }
 
@@ -94,7 +91,7 @@ export async function GET(request: NextRequest) {
 
   headers.set(
     "Cache-Control",
-    `public, max-age=${MAX_AGE}, s-maxage=${MAX_AGE}, stale-while-revalidate=86400`
+    `public, max-age=${MAX_AGE}, stale-while-revalidate=86400`
   );
 
   return new Response(upstreamRes.body, {
