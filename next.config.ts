@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
+  turbopack: {
+    root: path.resolve(__dirname),
+  },
   images: {
     // Allow next/image to optimise images served from the local media proxy.
     // The proxy uses ?key=... query strings, so localPatterns must explicitly
